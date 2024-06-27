@@ -4,11 +4,11 @@ mkdir \<workspace dir\>
 
 cd \<workspace dir\>
 
-repo init -u https://code.rdkcentral.com/r/manifests -b kirkstone -m rdkb-extsrc.xml
+repo init -u https://code.rdkcentral.com/r/manifests -b rdkb-2023q1-dunfell -m rdkb.xml
 
 repo sync -j\`nproc\` --no-clone-bundle
 
-git clone https://github.com/slanucha/rdk_meta_mylayer.git meta-mylayer
+git clone https://github.com/mizo-stack/rdk_meta_mylayer.git meta-mylayer
 
 MACHINE=raspberrypi4-64-rdk-broadband source meta-cmf-raspberrypi/setup-environment
 
