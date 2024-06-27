@@ -1,0 +1,21 @@
+From 4acc9eecac7787e2276bd7bdfaab3430da2eca6d Mon Sep 17 00:00:00 2001
+From: Szymon <szymon.lanucha@gmail.com>
+Date: Wed, 26 Jun 2024 14:30:21 +0200
+Subject: [PATCH] cstdint fix
+
+---
+ src/client/linux/handler/minidump_descriptor.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/client/linux/handler/minidump_descriptor.h b/src/client/linux/handler/minidump_descriptor.h
+index c7e4f2b3..799f6a73 100644
+--- a/src/client/linux/handler/minidump_descriptor.h
++++ b/src/client/linux/handler/minidump_descriptor.h
+@@ -37,6 +37,7 @@
+ 
+ #include "client/linux/handler/microdump_extra_info.h"
+ #include "common/using_std_string.h"
++#include <cstdint>
+ 
+ // This class describes how a crash dump should be generated, either:
+ // - Writing a full minidump to a file in a given directory (the actual path,
